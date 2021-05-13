@@ -38,11 +38,17 @@
 
 ### 路径问题(从哪里走来)
 
+##### [198. 打家劫舍](https://leetcode-cn.com/problems/house-robber/)
+
+##### [213. 打家劫舍 II](https://leetcode-cn.com/problems/house-robber-ii/)
+
+##### [337. 打家劫舍 III](https://leetcode-cn.com/problems/house-robber-iii/)
+
 ##### [数字三角形 ](https://www.luogu.com.cn/problem/P1216)
 
 ##### [821. 跳台阶 - AcWing题库](https://www.acwing.com/problem/content/823/)
 
-##### [403. 青蛙过河](https://leetcode-cn.com/problems/frog-jump/)
+#####  [403. 青蛙过河](https://leetcode-cn.com/problems/frog-jump/)
 
 ##### [435. 传球游戏 ](https://www.acwing.com/problem/content/description/437/)
 
@@ -58,11 +64,13 @@
 
 #### 求方案数
 
-##### [300. 最长递增子序列 ](https://leetcode-cn.com/problems/longest-increasing-subsequence/)模板题
+##### [300. 最长递增子序列 ](https://leetcode-cn.com/problems/longest-increasing-subsequence/)(<font color=#FF7F50 size=5>模板题</font>)
 
-##### [1143. 最长公共子序列 ](https://leetcode-cn.com/problems/longest-common-subsequence/)模板题
+##### [1143. 最长公共子序列 ](https://leetcode-cn.com/problems/longest-common-subsequence/)(<font color=#FF7F50 size=5>模板题</font>)
 
 ##### [272. 最长公共上升子序列 ](https://www.acwing.com/problem/content/274/)(结合了两个模板题的思路)
+
+##### [3499. 序列最大收益 ](https://www.acwing.com/problem/content/description/3502/)(递增子序列模型)
 
 #####  [377. 组合总和 Ⅳ](https://leetcode-cn.com/problems/combination-sum-iv/)
 
@@ -78,13 +86,9 @@
 
 #### 集合中满足条件的最大值
 
-##### [198. 打家劫舍](https://leetcode-cn.com/problems/house-robber/)
 
-##### [213. 打家劫舍 II](https://leetcode-cn.com/problems/house-robber-ii/)
 
-##### [337. 打家劫舍 III](https://leetcode-cn.com/problems/house-robber-iii/)
 
-   
 
 
 
@@ -107,6 +111,8 @@
 ### 环形dp
 
 ##### [435. 传球游戏 ](https://www.acwing.com/problem/content/description/437/)
+
+
 
 
 
@@ -168,7 +174,9 @@
 
 ### 记忆化搜索
 
-#####  [SHOI2002\]滑雪 ](https://www.luogu.com.cn/problem/P1434)
+#####  [SHOI2002\]滑雪 ](https://www.luogu.com.cn/problem/P1434)(向四个方向搜索)
+
+
 
 ##### [403. 青蛙过河](https://leetcode-cn.com/problems/frog-jump/)
 
@@ -188,9 +196,7 @@
 
 ## 二分
 
-### 模板
-
-##### [数的范围](https://www.acwing.com/problem/content/791/)
+##### [数的范围](https://www.acwing.com/problem/content/791/)(<font color=#FF7F50 size=5>模板题</font>)
 
 
 
@@ -222,9 +228,9 @@
 
 ### 构造check函数(求最大值最小为多少)
 
-##### [1011. 在 D 天内送达包裹的能力](https://leetcode-cn.com/problems/capacity-to-ship-packages-within-d-days/)
+##### [1011. 在 D 天内送达包裹的能力](https://leetcode-cn.com/problems/capacity-to-ship-packages-within-d-days/)(在数据范围内二分)
 
-##### [1482. 制作 m 束花所需的最少天数 ](https://leetcode-cn.com/problems/minimum-number-of-days-to-make-m-bouquets/submissions/)
+##### [1482. 制作 m 束花所需的最少天数 ](https://leetcode-cn.com/problems/minimum-number-of-days-to-make-m-bouquets/submissions/)(在数据范围内二分)
 
 ##### [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/) : [考察对「二分」的理解，以及 check 函数的「大于 小于」怎么写](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/solution/gong-shui-san-xie-kao-cha-dui-er-fen-de-86bk0/)
 
@@ -264,7 +270,9 @@
 
 ### 一维
 
-##### [前缀统计](https://www.acwing.com/problem/content/144/)
+##### [3485. 最大异或和 - AcWing题库](https://www.acwing.com/problem/content/3488/)
+
+
 
 
 
@@ -326,9 +334,11 @@
 
 ### Trie树(字典树)
 
-##### [208. 实现 Trie (前缀树)](https://leetcode-cn.com/problems/implement-trie-prefix-tree/)
+##### [前缀统计](https://www.acwing.com/problem/content/144/)
 
+##### [208. 实现 Trie (前缀树)](https://leetcode-cn.com/problems/implement-trie-prefix-tree/solution/gong-shui-san-xie-yi-ti-shuang-jie-er-we-esm9/)(数组模拟版，和节点版)(<font color=#FF7F50 size=5>模板题</font>)
 
+##### [3485. 最大异或和 ](https://www.acwing.com/problem/content/3488/)
 
 
 
@@ -336,9 +346,11 @@
 
 ### 队列
 
-#### 滑动窗口
 
-##### [滑动窗口]([154. 滑动窗口 - AcWing题库](https://www.acwing.com/problem/content/description/156/))(模板题)
+
+
+
+
 
 
 
@@ -346,9 +358,9 @@
 
 ### 链表
 
-##### [24. 两两交换链表中的节点 - 力扣（LeetCode） (leetcode-cn.com)](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)
+##### [ 两两交换链表中的节点 ](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)
 
-
+##### [ 回文链表 ](https://leetcode-cn.com/problems/palindrome-linked-list-lcci/)
 
 
 
@@ -358,7 +370,7 @@
 
 ### KMP算法
 
-##### [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/)(模板题)
+##### [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/)(<font color=\#6495ED size=5>模板题</font>)
 
 
 
@@ -381,6 +393,14 @@
 ##### [四平方和](https://www.acwing.com/problem/content/description/1223/)
 
 ##### [1205. 买不到的数目 ](https://www.acwing.com/problem/content/1207/)结论题
+
+
+
+### 异或
+
+##### [解码异或后的排列 ](https://leetcode-cn.com/problems/decode-xored-permutation/solution/gong-shui-san-xie-note-bie-pian-li-yong-zeh6o/)
+
+##### [ 数组异或操作 ](https://leetcode-cn.com/problems/xor-operation-in-an-array/)
 
 
 
@@ -415,4 +435,14 @@
 
 
 
+
+
+
+## 滑动窗口
+
+##### [滑动窗口]([154. 滑动窗口 - AcWing题库](https://www.acwing.com/problem/content/description/156/))(<font color=#FF7F50 size=5>模板题</font>)
+
+
+
+##### [3485. 最大异或和 - AcWing题库](https://www.acwing.com/problem/content/3488/)
 

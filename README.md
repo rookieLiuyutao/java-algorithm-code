@@ -114,8 +114,6 @@
 
 
 
-
-
 ### 三维dp
 
 ##### [1473. 粉刷房子 III](https://leetcode-cn.com/problems/paint-house-iii/)
@@ -168,7 +166,7 @@
 
 ##### [897. 递增顺序搜索树](https://leetcode-cn.com/problems/increasing-order-search-tree/)
 
-
+##### [3502. 不同路径数 ](https://www.acwing.com/problem/content/3505/)(向四个方向搜索)
 
 
 

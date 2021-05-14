@@ -1,11 +1,11 @@
-package Awing3510最长公共子序列等价优化;
+package Acwing897最长公共子序列;
 
 import java.util.Scanner;
 
 /**
- * @see 动态规划 线性dp https://www.acwing.com/problem/content/3513/
+ * @see 动态规划 线性dp
  */
-public class lcsOldClass {
+public class lcsNumberClass {
     static int N = 10010;
 
     static int[][] dp = new int[N][N];

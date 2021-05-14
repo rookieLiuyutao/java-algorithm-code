@@ -32,7 +32,24 @@ public class DHCPserver {
         String owner;
     }
 
-    static void updateIpsState() {
+    static IP[] ips = new IP[N];
+
+    static void updateIpsState(int receivedTime) {
+        for (int i = 1; i <= msgNum; i++) {
+            if (ips[i].expireTime != 0 && ips[i].expireTime <= receivedTime) {
+                if (ips[i].addressState == 1) {
+                    ips[i].addressState = 0;
+                    ips[i].owner = "";
+                    ips[i].expireTime = 0;
+                } else {
+                    ips[i].addressState = 3;
+                    ips[i].expireTime = 0;
+                }
+
+            }else {
+                ips[i].expireTime = 0;
+            }
+        }
 
     }
 
@@ -62,17 +79,22 @@ public class DHCPserver {
             ipAddress = sc.nextInt();
             expirationTime = sc.nextInt();
 //------------------------------------------------------
-            if (!receivingHost.equals(localName)&& !"*".equals(receivingHost)){
+            if (!receivingHost.equals(localName) && !"*".equals(receivingHost)) {
                 if (!"REQ".equals(messageType)) continue;
 
-                if ("REQ".equals(receivedTime)||"DIS".equals(receivedTime)) continue;
+            }
+            if (!("REQ".equals(messageType) || "DIS".equals(messageType))) continue;
 
-                if ("*".equals(receivingHost)&& "DIS".equals(messageType));
+            if (("*".equals(receivingHost) && !"DIS".equals(messageType)) || (localName.equals(receivingHost) && "DIS".equals(messageType)))
+                continue;
 
-
+            updateIpsState(receivedTime);
+            if ("DIS".equals(messageType)){
+//                if ()
 
 
             }
+
 
         }
 

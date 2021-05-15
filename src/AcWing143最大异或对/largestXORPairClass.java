@@ -59,12 +59,13 @@ public class largestXORPairClass {
         for (int i = 0; i < n; i++) {
             res = Math.max(res, queryLargestXORPair(arr[i]));
         }
-        for(int i = 0; i <31*4; i++) {
-            for(int j = 0; j <2; j++) {
-                System.out.print(son[i][j]+" ");
-            }
-            System.out.println();
-        }
+
+//        for(int i = 0; i <31*4; i++) {
+//            for(int j = 0; j <2; j++) {
+//                System.out.print(son[i][j]+" ");
+//            }
+//            System.out.println();
+//        }
         System.out.println(res);
     }
 

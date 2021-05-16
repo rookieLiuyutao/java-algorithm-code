@@ -64,7 +64,6 @@ public  class TireCountClass {
                 res += count[p];
             }
             return res;
-
         }
 
 

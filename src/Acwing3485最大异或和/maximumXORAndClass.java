@@ -66,12 +66,16 @@ public class maximumXORAndClass {
             insert(qSum[i], 1);
 
         }
+
+//---------------------------打印，观察son数组---------------
         for(int i = 0; i <n*31; i++) {
             for(int j = 0; j <2; j++) {
                 System.out.print(son[i][j]+" ");
             }
             System.out.println();
         }
+
+//---------------------------------------------------------
         System.out.println(res);
     }
 

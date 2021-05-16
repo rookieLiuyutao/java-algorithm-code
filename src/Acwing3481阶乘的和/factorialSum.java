@@ -6,6 +6,11 @@ import java.util.Scanner;
  * @see   https://www.acwing.com/problem/content/3484/
  */
 public class factorialSum {
+    /**
+     * 求一个数阶乘的函数
+     * @param x
+     * @return
+     */
     static int jirC(int x){
         int sum = 1;
         int num = x;
@@ -16,33 +21,29 @@ public class factorialSum {
         return num==0? 1:sum;
     }
 
-
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         while (true){
             int n = sc.nextInt();
-            int c = n;
-            if(n==-1){
+            if(n<0){
                 break;
             }
             if(n==0){
                 System.out.println("NO");
-                continue;
+                continue;//***
             }
             for(int i = 9; i >=0; i--) {
                 int m = jirC(i);
-                if (c>=m){
-                    c-=m;
+                if (n>=m){
+                    n-=m;
                 }
             }
-            if (c==0){
+            if (n==0){
                 System.out.println("YES");
             }
-            if(c>0){
+            if(n>0){
                 System.out.println("NO");
             }
-
         }
 
     }

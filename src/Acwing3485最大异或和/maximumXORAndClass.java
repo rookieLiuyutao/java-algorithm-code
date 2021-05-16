@@ -1,5 +1,6 @@
 package Acwing3485最大异或和;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -64,6 +65,12 @@ public class maximumXORAndClass {
             res = Math.max(res, query(qSum[i]));
             insert(qSum[i], 1);
 
+        }
+        for(int i = 0; i <n*31; i++) {
+            for(int j = 0; j <2; j++) {
+                System.out.print(son[i][j]+" ");
+            }
+            System.out.println();
         }
         System.out.println(res);
     }

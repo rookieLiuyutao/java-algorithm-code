@@ -32,7 +32,6 @@ public class cousinNodeOfBinaryTreeClass {
         if (root == null) {
             return;
         }
-
         if (root.val==x){
             treeHeight = height;
             father = parent.val;

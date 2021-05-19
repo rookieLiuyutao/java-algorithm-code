@@ -1,6 +1,6 @@
 package leetcode1738找出第K大的异或坐标值;
 
-import java.util.*;
+import java.util.ArrayList;
 
 /**
  * @see 二维前缀和 https://leetcode-cn.com/problems/find-kth-largest-xor-coordinate-value/
@@ -26,7 +26,9 @@ public class kthLargestValueClass {
 //            System.out.println();
 //        }
 //        System.out.println(list);
-        return Collections.min(list);
+//        Collections.sort(list);
+        list.sort(( a,  b) -> a-b);
+        return list.get(m * n - k);
     }
 
     public static void main(String[] args) {

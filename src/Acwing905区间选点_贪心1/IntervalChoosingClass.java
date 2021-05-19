@@ -9,12 +9,7 @@ import java.util.*;
 public class IntervalChoosingClass {
 
     public static int intervalChoosing(int[][] arr, int N) {
-        Arrays.sort(arr, new Comparator<int[]>() {
-            @Override
-            public int compare(int[] o1, int[] o2) {
-                return o1[1] - o2[1];
-            }
-        });
+        Arrays.sort(arr, Comparator.comparingInt(o -> o[1]));
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < 2; j++) {
                 System.out.print(arr[i][j]);

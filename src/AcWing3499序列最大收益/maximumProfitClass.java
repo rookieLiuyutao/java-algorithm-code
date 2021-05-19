@@ -11,7 +11,6 @@ public class maximumProfitClass {
     static int[] arr = new int[N];
     static int[][] worth = new int[N][N];
     static int[][] dp = new int[N][N];
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();

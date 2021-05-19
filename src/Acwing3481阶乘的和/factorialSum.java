@@ -3,11 +3,12 @@ package Acwing3481阶乘的和;
 import java.util.Scanner;
 
 /**
- * @see   https://www.acwing.com/problem/content/3484/
+ * @see 哈希表 https://www.acwing.com/problem/content/3484/
  */
 public class factorialSum {
     /**
      * 求一个数阶乘的函数
+     * 发现一个数的阶乘多次重复计算，可以把每个结果放到set里优化
      * @param x
      * @return
      */

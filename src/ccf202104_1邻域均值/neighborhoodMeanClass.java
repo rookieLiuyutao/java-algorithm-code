@@ -37,7 +37,7 @@ public class neighborhoodMeanClass {
             for(int j = 1; j <=n ; j++) {
                 int a = Math.max(i-r,1),b = Math.max(j-r,1),c = Math.min(i+r,n),d= Math.min(j+r,n);
                 //这里算平均值时用除法会引起取整的问题,用double也无法解决，因此把除数乘到t上用乘法比
-                int average = (s[c][d] - s[a - 1][d] - s[c][b - 1] + s[a - 1][b - 1]);
+                int average = getSum(a,b,c,d);
 //                int average = (s[c][d] - s[a - 1][d] - s[c][b - 1] + s[a - 1][b - 1])/((c-a+1)*(d-b+1));
 //                double average = (s[c][d] - s[a - 1][d] - s[c][b - 1] + s[a - 1][b - 1])/((c-a+1)*(d-b+1));
                 if (average<t*((c-a+1)*(d-b+1))){

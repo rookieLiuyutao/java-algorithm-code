@@ -3,9 +3,7 @@ package ccf202104_1灰度直方图;
  * @see 灰度直方图 http://118.190.20.162/view.page?gpid=T128  https://www.acwing.com/problem/content/3414/
  */
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Scanner;
+import java.util.*;
 
 public class grayscaleHistogramClass {
     public static void main(String[] args) {
@@ -20,13 +18,14 @@ public class grayscaleHistogramClass {
             for (int j = 0; j < m; j++) {
                 arr[i][j] = sc.nextInt();
 //---------------------用hashMap对二维数组的每个变量进行个数统计
-                int count = 1;
-                if (map.containsKey(arr[i][j])) {
-                    count += map.get(arr[i][j]);
-                    map.put(arr[i][j], count);
-                } else {
-                    map.put(arr[i][j], count);
-                }
+//                int count = 1;
+//                if (map.containsKey(arr[i][j])) {
+//                    count += map.get(arr[i][j]);
+//                    map.put(arr[i][j], count);
+//                } else {
+//                    map.put(arr[i][j], count);
+//                }
+                map.put(arr[i][j], map.getOrDefault(arr[i][j],0)+1);
 //-----------------------------------------------
             }
         }
@@ -42,7 +41,10 @@ public class grayscaleHistogramClass {
         for (int i = 0; i < L; i++) {
             System.out.print(ans[i]+" ");
         }
-
+        for (Map.Entry<Integer,Integer> entry: map.entrySet()){
+            System.out.println(entry.getKey());
+        }
+//        System.out.println(map.keySet().toArray()[0]);
 
     }
 }

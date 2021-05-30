@@ -1,4 +1,4 @@
-package AcWing131直方图中最大的矩形_单调栈模板题;
+package AcWing131直方图中最大的矩形_单调栈模板题_栈存下标;
 
 import java.util.Scanner;
 

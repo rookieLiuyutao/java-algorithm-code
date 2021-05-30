@@ -22,14 +22,19 @@ public class slidingWindowClass {
         for (int i = 0; i < arrLen; i++) {
             arr[i] = sc.nextInt();
         }
-//        System.out.println();
 
         int head = 0, end = -1;
         for (int i = 0; i < arrLen; i++) {
-            if (head <= end && queue[head] < i - queueLen + 1) head++;
-            while (head <= end && arr[queue[end]] >= arr[i]) end--;
+            if (head <= end && queue[head] < i - queueLen + 1) {
+                head++;
+            }
+            while (head <= end && arr[queue[end]] >= arr[i]) {
+                end--;
+            }
             queue[++end] = i;
-            if (i >= queueLen - 1) out.print(arr[queue[head]] + " ");
+            if (i >= queueLen - 1) {
+                out.print(arr[queue[head]] + " ");
+            }
 
         }
         System.out.println();
@@ -43,7 +48,6 @@ public class slidingWindowClass {
             if (i >= queueLen - 1) out.print(arr[queue[head]] + " ");
 
         }
-//        out.print(111111);
 
     }
 

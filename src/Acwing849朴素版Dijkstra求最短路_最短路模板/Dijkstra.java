@@ -83,14 +83,18 @@ public class Dijkstra {
         }
 
         int t = dijkstra();
-        for(int i = 1; i <=n; i++) {
-            for(int j = 1; j <=n; j++) {
-                System.out.printf("%7d",adjacencyMatrix[i][j]);
-            }
-            System.out.println();
-        }
+
+        //打印邻接矩阵
+//        for(int i = 1; i <=n; i++) {
+//            for(int j = 1; j <=n; j++) {
+//                System.out.printf("%7d",adjacencyMatrix[i][j]);
+//            }
+//            System.out.println();
+//        }
 
         System.out.println(t);
+
+        //打印最短距离的数组
         for(int i = 0; i <=n; i++) {
             System.out.print(dist[i]+" ");
         }

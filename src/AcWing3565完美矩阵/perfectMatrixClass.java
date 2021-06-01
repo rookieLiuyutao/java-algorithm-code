@@ -1,6 +1,5 @@
 package AcWing3565完美矩阵;
 
-import java.io.*;
 import java.util.*;
 
 /**
@@ -11,59 +10,43 @@ public class perfectMatrixClass {
     static final int N = 105;
     static int n, m;
     static int[][] matrix = new int[N][N];
-    static StreamTokenizer in = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
-    static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
 
-
-    static int nextInt() throws Exception {
-        in.nextToken();
-        return (int) in.nval;
-    }
-
-    static String next() throws Exception {
-        in.nextToken();
-        return in.sval;
-    }
-
-    static long work(Set<int[]> set) {
-        List<Integer> list = new ArrayList<>();
-        for (int[] i : set) {
-            list.add(matrix[i[0]][i[1]]);
-        }
-        Collections.sort(list);
-        long ans = 0;
-        for (int j = 0; j < list.size(); j++) {
-            ans += Math.abs(list.get(j) - list.get(list.size() / 2));
-        }
-
-        return ans;
-    }
-
-    public static void main(String[] args) throws Exception {
-        int count = nextInt();
-        while (count-- != 0) {
-            n = nextInt();
-            m = nextInt();
-            for (int i = 0; i < n; i++) {
-                for (int j = 0; j < m; j++) {
-                    matrix[n][m] = nextInt();
-                }
-            }
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int count = in.nextInt();
+        while (count-- > 0) {
             long res = 0;
-            for (int i = 0; i <= n - 1 - i; i++) {
-                for (int j = 0; j < m - 1 - j; j++) {
-                    Set<int[]> set = new HashSet<>();
-                    set.add(new int[]{i,j});
-                    set.add(new int[]{i,m-1-j});
-                    set.add(new int[]{n-1-i,j});
-                    set.add(new int[]{n-1-i,m-1-j});
-
-                    res += work(set);
-
+            n = in.nextInt();
+            m = in.nextInt();
+            for (int i = 1; i <= n; i++) {
+                for (int j = 1; j <= m; j++) {
+                    matrix[i][j] = in.nextInt();
                 }
             }
-            System.out.println(res);
+            for (int i = 1; i <= n; i++) {
+                for (int j = 1; j <= m; j++) {
+                    int[] a = new int[4];
+                    a[0] = matrix[i][j];
+                    a[1] = matrix[i][m - j + 1];
+                    a[2] = matrix[n - i + 1][j];
+                    a[3] = matrix[n - i + 1][m - j + 1];
+                    Arrays.sort(a);
+                    for (int k = 0; k < 4; k++) {
+                        res += Math.abs(a[k] - a[1]);
+                    }
+                }
+            }
+            System.out.println(res/4);
+            for(int i = 1; i <=n; i++) {
+                for(int j =1; j <=m; j++) {
+                    System.out.print(matrix[n][m]+" ");
+                }
+                System.out.println();
+            }
+
         }
     }
+
+
 
 }

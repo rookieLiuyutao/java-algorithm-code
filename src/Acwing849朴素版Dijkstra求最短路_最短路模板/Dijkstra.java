@@ -34,21 +34,26 @@ public class Dijkstra {
      */
     static int dijkstra(){
         //初始化
-        for(int i = 0; i <=n; i++) {
-          dist[i] = 0x3f3f;
-        }
+        Arrays.fill(dist, 0x3f3f);
+        // for(int i = 0; i <=n; i++) {
+        //   dist[i] = 0x3f3f;
+        // }
         dist[1] = 0;
         for(int i = 0; i <n; i++) {
-          int t = -1;
-          for(int j = 1; j <=n; j++) {
-            if (!st[j]&&(t==-1||dist[t]>dist[j])){
-                t=j;
+            int t = -1;
+            for(int j = 1; j <=n; j++) {
+                if (!st[j]&&(t==-1||dist[t]>dist[j])){
+                    t=j;
+                }
+
             }
-          }
-          st[t] = true;
-          for(int j = 1; j <=n; j++) {
-            dist[j] = Math.min(dist[j],dist[t]+adjacencyMatrix[t][j]);
-          }
+            if(t==n){
+                break;
+            }
+            st[t] = true;
+            for(int j = 1; j <=n; j++) {
+                dist[j] = Math.min(dist[j],dist[t]+adjacencyMatrix[t][j]);
+            }
         }
         return dist[n]==0x3f3f? -1:dist[n];
     }
@@ -59,11 +64,11 @@ public class Dijkstra {
         m = nextInt();
 
         //初始化邻接矩阵
-//        for (int i = 1; i <= n; i++) {
-//            Arrays.fill(adjacencyMatrix[i], 0x3f3f);
-//        }
+        // for (int i = 1; i <= n; i++) {
+        //     Arrays.fill(adjacencyMatrix[i], 0x3f3f);
+        // }
         for(int i = 1; i <=n; i++) {
-            for(int j = 1; j <=n; j++) {
+            for(int j = 0; j <=n; j++) {
                 if (i == j) {
                     adjacencyMatrix[i][j] = 0;
                 }else {
@@ -72,32 +77,23 @@ public class Dijkstra {
             }
         }
 
-        //因为两个点之间可能有多条边，选择其中的最短边存入邻接矩阵
         while (m-->0){
             int a = nextInt();
             int b = nextInt();
             int c = nextInt();
             adjacencyMatrix[a][b] = Math.min(adjacencyMatrix[a][b],c);
-            //如果是无向图，其特点为对称，就要加上下面这一句
-//            adjacencyMatrix[b][a] = adjacencyMatrix[a][b];
         }
 
         int t = dijkstra();
-
-        //打印邻接矩阵
-//        for(int i = 1; i <=n; i++) {
-//            for(int j = 1; j <=n; j++) {
-//                System.out.printf("%7d",adjacencyMatrix[i][j]);
-//            }
-//            System.out.println();
-//        }
+        // for(int i = 0; i <=n; i++) {
+        //     for(int j = 0; j <=m; j++) {
+        //         System.out.print(adjacencyMatrix[i][j]+ " ");
+        //     }
+        //     System.out.println();
+        // }
 
         System.out.println(t);
-
-        //打印最短距离的数组
-        for(int i = 0; i <=n; i++) {
-            System.out.print(dist[i]+" ");
-        }
+        // System.out.println(Arrays.toString(dist));
 
     }
 }

@@ -64,13 +64,12 @@ public class Dijkstra2 {
         int t = dijkstra();
         for(int i = 0; i <=n; i++) {
             for(int j = 0; j <=n; j++) {
-                System.out.print(adjacencyMatrix[i][j]+ " ");
+                out.print(adjacencyMatrix[i][j]+ " ");
             }
-            System.out.println();
+            out.println();
         }
 
-        System.out.println(t);
-//        System.out.println(Arrays.toString(dist));
+        out.println(t);
 
     }
 }

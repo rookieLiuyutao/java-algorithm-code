@@ -6,8 +6,8 @@ import java.util.Arrays;
 /**
  * @see 图论 最小生成树 Prim https://www.acwing.com/solution/content/38312/ https://www.luogu.com.cn/problem/P3366
  */
-public class PrimClass {
-    static final int INF = 9999;
+public class Main {
+    static final int N = 5010, INF = 9999;
     static int[][] ad;
     static int[] dist;
     static int n, m;
@@ -18,6 +18,11 @@ public class PrimClass {
     static int nextInt() throws Exception {
         in.nextToken();
         return (int) in.nval;
+    }
+
+    static String next() throws Exception {
+        in.nextToken();
+        return in.sval;
     }
 
     static int prim() {
@@ -66,9 +71,9 @@ public class PrimClass {
             int b = nextInt();
             int c = nextInt();
             ad[a][b] = Math.min(ad[a][b], c);
-//-------------无向图-----------------------------
-            ad[b][a]= ad[a][b];
-//-----------------------------------------------
+//----------------有向图---------------
+//            ad[b][a]= ad[a][b];
+//-------------------------------------------------
         }
         int ans = prim();
         if (ans == INF) {

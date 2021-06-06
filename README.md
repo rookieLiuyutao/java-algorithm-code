@@ -30,7 +30,7 @@
 
 ##### [368. 最大整除子集](https://leetcode-cn.com/problems/largest-divisible-subset/)
 
-
+##### [3499. 序列最大收益 ](https://www.acwing.com/problem/content/3502/)
 
 
 
@@ -168,6 +168,8 @@
 
 ##### [3502. 不同路径数 ](https://www.acwing.com/problem/content/3505/)(向四个方向搜索)
 
+##### [3483. 2的幂次方 ](https://www.acwing.com/problem/content/3486/)(字符串递归打印)
+
 
 
 ### 记忆化搜索
@@ -184,9 +186,9 @@
 
 ## 图论
 
+##### [AcWing 854. Floyd求最短路](https://www.acwing.com/solution/content/20441/)(<font color=#FF7F50 size=5>多源模板题</font>)
 
-
-
+##### [P3366 【模板】最小生成树 ](https://www.luogu.com.cn/problem/P3366)(<font color=#FF7F50 size=5>最小生成树模板题Prim和Kruscal</font>)
 
 
 
@@ -196,9 +198,9 @@
 
 ##### [数的范围](https://www.acwing.com/problem/content/791/)(<font color=#FF7F50 size=5>模板题</font>)
 
+##### [3481. 阶乘的和 ](https://www.acwing.com/problem/content/3484/)
 
-
-
+##### [3578. 最大中位数 - AcWing题库](https://www.acwing.com/problem/content/3581/)
 
 
 
@@ -270,7 +272,9 @@
 
 ##### [3485. 最大异或和 - AcWing题库](https://www.acwing.com/problem/content/3488/)
 
+##### [523. 连续的子数组和](https://leetcode-cn.com/problems/continuous-subarray-sum/)
 
+##### [523. 连续的子数组和 ](https://leetcode-cn.com/problems/continuous-subarray-sum/)(哈希表+数学性质求满足一定条件的前缀和)
 
 
 
@@ -300,11 +304,13 @@
 
 ##### [1540. 主导颜色 ](https://www.acwing.com/problem/content/description/1542/)
 
+##### [3481. 阶乘的和 ](https://www.acwing.com/problem/content/3484/)(用哈希set对出现过的数存储，避免重复计算)
 
+##### [692. 前K个高频单词 ](https://leetcode-cn.com/problems/top-k-frequent-words/submissions/)(用比较器对哈希表元素排序)
 
-​	
+### 集合
 
-
+##### [1738. 找出第 K 大的异或坐标值 ](https://leetcode-cn.com/problems/find-kth-largest-xor-coordinate-value/)(集合元素的排序)
 
 
 
@@ -328,6 +334,34 @@
 
 
 
+### 栈
+
+
+
+#### 双栈
+
+##### [128. 编辑器 - AcWing题库](https://www.acwing.com/problem/content/130/)(用两个栈顶相对的栈处理中间问题)(<font color=#FF7F50 size=5>模板题</font>)
+
+
+
+
+
+#### 单调栈
+
+##### [131. 直方图中最大的矩形 - AcWing题库](https://www.acwing.com/problem/content/133/)(<font color=#FF7F50 size=5>模板题</font>)
+
+##### [152. 城市游戏 - AcWing题库](https://www.acwing.com/problem/content/154/)(<font color=#FF7F50 size=5>模板题</font>)
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### Trie树(字典树)
@@ -344,11 +378,21 @@
 
 ### 队列
 
+#### 滑动窗口
+
+##### [滑动窗口]([154. 滑动窗口 - AcWing题库](https://www.acwing.com/problem/content/description/156/))(<font color=#FF7F50 size=5>模板题</font>)
+
+##### [3485. 最大异或和 - AcWing题库](https://www.acwing.com/problem/content/3488/)
 
 
 
 
 
+### 优先级队列(堆)
+
+##### [leetcode 1834 先来先服务算法](https://leetcode-cn.com/problems/single-threaded-cpu/)
+
+##### [1882. 使用服务器处理任务)](https://leetcode-cn.com/problems/process-tasks-using-servers/)
 
 
 
@@ -368,7 +412,9 @@
 
 ### KMP算法
 
-##### [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/)(<font color=\#6495ED size=5>模板题</font>)
+##### [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/)(<font color=#FF7F50 size=5>模板题</font>)
+
+
 
 
 
@@ -391,6 +437,12 @@
 ##### [四平方和](https://www.acwing.com/problem/content/description/1223/)
 
 ##### [1205. 买不到的数目 ](https://www.acwing.com/problem/content/1207/)结论题
+
+
+
+### 博弈论
+
+
 
 
 
@@ -435,12 +487,4 @@
 
 
 
-
-## 滑动窗口
-
-##### [滑动窗口]([154. 滑动窗口 - AcWing题库](https://www.acwing.com/problem/content/description/156/))(<font color=#FF7F50 size=5>模板题</font>)
-
-
-
-##### [3485. 最大异或和 - AcWing题库](https://www.acwing.com/problem/content/3488/)
 

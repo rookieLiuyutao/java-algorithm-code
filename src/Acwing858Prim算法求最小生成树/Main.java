@@ -77,6 +77,7 @@ public class Main {
         }
         int ans = prim();
         if (ans == INF) {
+            //表示不可达
             System.out.println("orz");
         } else {
             System.out.println(ans);

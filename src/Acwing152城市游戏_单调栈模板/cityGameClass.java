@@ -57,6 +57,9 @@ public class cityGameClass {
             }
           }
         }
+//        for (char[] x:land){
+//            System.out.println(Arrays.toString(x));
+//        }
         int res = 0;
         for(int i = 1; i <=n; i++) {
             res = Math.max(res,work(height[i]));

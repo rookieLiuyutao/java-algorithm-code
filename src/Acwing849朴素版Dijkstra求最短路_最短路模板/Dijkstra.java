@@ -82,6 +82,9 @@ public class Dijkstra {
             int b = nextInt();
             int c = nextInt();
             adjacencyMatrix[a][b] = Math.min(adjacencyMatrix[a][b],c);
+//--------------------无向图----------------------------------
+//            adjacencyMatrix[a][b] = adjacencyMatrix[b][a];
+//-----------------------------------------------------------
         }
 
         int t = dijkstra();

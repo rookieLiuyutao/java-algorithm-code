@@ -80,10 +80,13 @@ public class KruscalClass {
             int b = nextInt();
             int c = nextInt();
             edges[i] = new Edge(a, b, c);
+//-------------------无向图----------------------------
+//            edges[i] = new Edge(b,a,c);
+//-----------------------------------------------
         }
         int ans = kruskal();
         if (ans==-1){
-            System.out.println("impossible");
+            System.out.println("orz");
         }else {
             System.out.println(ans);
         }

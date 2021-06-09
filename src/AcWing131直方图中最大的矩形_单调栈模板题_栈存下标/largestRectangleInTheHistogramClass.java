@@ -11,7 +11,7 @@ public class largestRectangleInTheHistogramClass {
          static    int[] left = new int[N];
          static    int[] right = new int[N];
          static    int[] q = new int[N];
-    //        用数组模拟栈的时候，要实现“栈的长度是动态变化的这个特点”，要用另一个存下标的数组来实现
+    //用数组模拟栈的时候，要实现“栈的长度是动态变化的这个特点”，要用另一个存下标的数组来实现
     //也就是说栈中元素的长度，是队列的长度
     //栈中存的是选入队列的元素的下标，通过下标从原数组中获得值
     //这样做还有一个好处；如果存值，不可能通过该值找回该值原来的下标，

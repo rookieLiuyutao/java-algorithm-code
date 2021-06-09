@@ -23,10 +23,16 @@ public class completeBackpackIOClass {
             worth[i] = sc.nextInt();
         }
 
-        for(int i = 1; i <= n; i++)
-            for(int j = 0; j <= bagVolume; j++)
-                for (int k = 0;k*volume[i]<=j;k++)
+        for(int i = 1; i <= n; i++) {
+            //i枚举物品的选择范围
+            for(int j = 0; j <= bagVolume; j++) {
+                //j枚举每个上限
+                for (int k = 0;k*volume[i]<=j;k++) {
+                    //k枚举第i个物品的选择个数
                     dp[i][j] = Math.max(dp[i][j],dp[i-1][j-k*volume[i]]+worth[i]);
+                }
+            }
+        }
         System.out.println(dp[n][bagVolume]);
 
     }

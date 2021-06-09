@@ -1,4 +1,4 @@
-package Acwing4多重背包问题;
+package Acwing5多重背包问题_二进制优化;
 /**
  * @see 多重背包 https://www.acwing.com/problem/content/6/
  */

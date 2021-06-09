@@ -24,8 +24,9 @@ public class multipleKnapsackClass {
 
         for (int i = 1; i <= n; i++) {
             for (int j = 0; j <= bagVolume; j++) {
-                for (int k = 0; k <= solidNum[i] && k * volume[i] <= j; k++)
+                for (int k = 0; k <= solidNum[i] && k * volume[i] <= j; k++) {
                     dp[i][j] = Math.max(dp[i][j], dp[i - 1][j - k * volume[i]] + worth[i] * k);
+                }
             }
         }
         System.out.println(dp[n][bagVolume]);

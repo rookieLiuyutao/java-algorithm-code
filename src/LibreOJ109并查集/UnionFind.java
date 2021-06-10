@@ -36,7 +36,6 @@ public class UnionFind {
         m = nextInt();
         p = new int[0x1F1E33 << 2];
         long res = 0;
-
         for(int i = 1; i <=n; i++) {
           p[i] = i;
         }

@@ -11,34 +11,16 @@ public class mergeTripletsClass {
 
     public boolean mergeTriplets(int[][] triplets, int[] target) {
         int n = triplets.length;
-        Set<Integer> list1 = new HashSet<>();
-        Set<Integer> list2 = new HashSet<>();
-        Set<Integer> list3 = new HashSet<>();
-
-        for(int i = 0; i <n; i++) {
-          if (target[0]==triplets[i][0]){
-              list1.add(i);
-          }
-          if (target[1]==triplets[i][1]){
-              list2.add(i);
-          }
-          if (target[2]==triplets[i][2]){
-              list3.add(i);
-          }
+        int x = 0,y = 0,z = 0;
+        for (int []i:triplets){
+            if (i[0]>target[0]||i[1]>target[1]||i[2]>target[2]){
+                continue;
+            }
+            x = Math.max(x,i[0]);
+            y = Math.max(y,i[1]);
+            z = Math.max(z,i[2]);
         }
-        System.out.println("1:"+list1);
-        System.out.println(list1.isEmpty());
-        System.out.println("2:"+list2);
-        System.out.println(list2.isEmpty());
-
-        System.out.println("3:"+list3);
-        System.out.println(list3.isEmpty());
-
-
-
-
-        return !list1.isEmpty()&&!list2.isEmpty()&&!list3.isEmpty();
-
+        return x == target[0]&&y == target[1]&&z == target[2];
     }
 
 }

@@ -1,5 +1,6 @@
 package x;
 
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 class test {
@@ -43,16 +44,16 @@ class test {
 
 
     public static void main(String[] args) throws Exception {
-        Scanner sc = new Scanner(System.in);
-        res = Integer.MAX_VALUE/2;
-        n = sc.nextInt();
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                weight[i][j] = sc.nextInt();
-            }
-        }
-        dfs(0, 0);
-        System.out.println(res);
+//        Scanner sc = new Scanner(System.in);
+//        res = Integer.MAX_VALUE/2;
+//        n = sc.nextInt();
+//        for (int i = 0; i < n; i++) {
+//            for (int j = 0; j < n; j++) {
+//                weight[i][j] = sc.nextInt();
+//            }
+//        }
+//        dfs(0, 0);
+//        System.out.println(res);
     }
 }
 

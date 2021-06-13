@@ -20,7 +20,9 @@ public class lisToLcsClass {
         String[] v = br.readLine().split(" ");
         int[] a = new int[n];
         int[] b = new int[n];
-        for(int i = 0; i < n; i++) a[i] = Integer.parseInt(u[i]);
+        for(int i = 0; i < n; i++) {
+            a[i] = Integer.parseInt(u[i]);
+        }
         for(int i = 0; i < n; i++) b[i] = Integer.parseInt(v[i]);
 
         Arrays.fill(id, -1);

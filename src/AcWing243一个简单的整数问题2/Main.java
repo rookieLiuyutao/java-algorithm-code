@@ -57,7 +57,7 @@ public class Main {
           arr[i] = nextInt();
           long b = arr[i]-arr[i-1];
           add(tr1,i,b);
-          add(tr2,i, (long) b *i);
+          add(tr2,i,  b *i);
 
         }
         while (m-->0){

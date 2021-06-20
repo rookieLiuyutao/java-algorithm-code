@@ -27,11 +27,7 @@ public class shortestHamiltonPath {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int range = 1 << n;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                weight[i][j] = sc.nextInt();
-            }
-        }
+
         for (int i = 0; i < M; i++) {
             for (int j = 0; j < N; j++) {
                 dp[i][j] = Integer.MAX_VALUE / 2;

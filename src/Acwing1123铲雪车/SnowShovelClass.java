@@ -25,9 +25,6 @@ public class SnowShovelClass {
         long hour = time/60;
         long minute = time%60;
         System.out.printf("%d:%02d\n",hour,minute);
-
     }
-
-
 
 }

@@ -41,7 +41,6 @@ public class AddTwoNumbersClass {
 
         }
         return dummy.next;
-
     }
 
 }

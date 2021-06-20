@@ -72,7 +72,7 @@ public class Main {
             int c = nextInt();
             ad[a][b] = Math.min(ad[a][b], c);
 //----------------有向图---------------
-//            ad[b][a]= ad[a][b];
+            ad[b][a]= ad[a][b];
 //-------------------------------------------------
         }
         int ans = prim();

@@ -81,7 +81,7 @@ public class KruscalClass {
             int c = nextInt();
             edges[i] = new Edge(a, b, c);
 //-------------------无向图----------------------------
-//            edges[i] = new Edge(b,a,c);
+            edges[i] = new Edge(b,a,c);
 //-----------------------------------------------
         }
         int ans = kruskal();

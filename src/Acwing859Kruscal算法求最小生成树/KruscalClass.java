@@ -39,7 +39,7 @@ public class KruscalClass {
     /**
      * 并查集find模板
      * @param x 当前连通块的点
-     * @return
+     * @return p[x]
      */
     static int find(int x) {
         if (p[x]!=x){

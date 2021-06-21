@@ -21,7 +21,7 @@ public class EulerCircuitClass {
     }
 
     static final int N = 100010,M = 400010;
-    static int[] ans = new int[M/2], h = new int[N], e = new int[M], ne = new int[M], dIn = new int[N], dOut = new int[N];
+    static int[] ans , h , e , ne , dIn , dOut;
     static int type, n, m, idx, cnt;
     static boolean[] used = new boolean[M];
 
@@ -40,8 +40,9 @@ public class EulerCircuitClass {
 
             used[i] = true;
 
-            if (type == 1)
+            if (type == 1) {
                 used[i ^ 1] = true; //如果无向边 则把反向边也标记
+            }
 
             int t;//点的编号  无向图时点编号=边编号/2+1 有向图时点编号=便编号+1
 
@@ -64,16 +65,16 @@ public class EulerCircuitClass {
 
 
     public static void main(String[] args) throws Exception {
-//        type = nextInt();
-//        n = nextInt();
-//        m = nextInt();
-//        h = new int[n + 1];
-//        e = new int[m * 2 + 1];
-//        ne = new int[m * 2 + 1];
-//        ans = new int[n * 2 + 1];
-//        dIn = new int[n + 1];
-//        dOut = new int[n + 1];
-//        used = new boolean[m * 2 + 1];
+        type = nextInt();
+        n = nextInt();
+        m = nextInt();
+        h = new int[n + 1];
+        e = new int[m * 2 + 1];
+        ne = new int[m * 2 + 1];
+        ans = new int[n * 2 + 1];
+        dIn = new int[n + 1];
+        dOut = new int[n + 1];
+        used = new boolean[m * 2 + 1];
 
         Arrays.fill(h, -1);
 

@@ -3,6 +3,7 @@ package Acwing1184欧拉回路;
 import java.io.*;
 import java.util.Arrays;
 
+
 /**
  * @see 图论 欧拉回路 https://loj.ac/p/10105 https://www.acwing.com/solution/content/53434/
  */
@@ -14,7 +15,6 @@ public class EulerCircuitClass {
         in.nextToken();
         return (int) in.nval;
     }
-
     static String next() throws Exception {
         in.nextToken();
         return in.sval;

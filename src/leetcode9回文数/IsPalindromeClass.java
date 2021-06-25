@@ -24,7 +24,6 @@ public class IsPalindromeClass {
         }
         return true;
     }
-
     public static void main(String[] args) {
         int x = 121;
         System.out.println(new IsPalindromeClass().isPalindrome(x));

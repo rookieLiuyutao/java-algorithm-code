@@ -23,10 +23,10 @@ public class PrimClass {
     static int prim() {
         Arrays.fill(dist, INF);
         int res = 0;
-        for (int i = 0; i < n; i++) {
+       for (int i = 0; i < n; i++) {
             int t = -1;
             for (int j = 1; j <= n; j++) {
-                if (!st[j] && (t == -1 || dist[j] < dist[t])) {
+                if (!st[j] && (t  ==-1 || dist[j] < dist[t])) {
                     t = j;
                 }
             }

@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 /**
- * @see https://www.acwing.com/problem/content/3730/
+ * @see 位运算 https://www.acwing.com/problem/content/3730/
  */
 public class Main {
     static StreamTokenizer in = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));

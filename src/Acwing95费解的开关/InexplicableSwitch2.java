@@ -8,11 +8,11 @@ import java.util.Scanner;
 /**
  * @see 递推 https://www.acwing.com/activity/content/19/
  */
-public class InexplicableSwitch {
+public class InexplicableSwitch2 {
 
     static Scanner sc = new Scanner(System.in);
     static final int N = 6;
-    static int[][] g = new int[N][N], temp = new int[N][N];
+    static char[][] g = new char[N][N], temp = new char[N][N];
     static int[] dx = {-1, 0, 1, 0, 0}, dy = {0, 1, 0, -1, 0};
 
     static void turn(int x, int y) {
@@ -35,7 +35,7 @@ public class InexplicableSwitch {
                 String s = sc.next();
                 // System.out.println(s);
                 for (int j = 0; j < 5; j++) {
-                    temp[i][j] = s.charAt(j) - '0';
+                    temp[i][j] = s.charAt(j);
                     // g[i][j] = temp[i][j];
                 }
             }
@@ -47,7 +47,7 @@ public class InexplicableSwitch {
                 }
                 int step = 0;
                 for (int i = 0; i < 5; i++) {
-                    if ((op >> i & 1) ==1) {
+                    if ((op >> i & 1) !=0) {
                         step++;
                         turn(0, i);
                     }
@@ -55,7 +55,7 @@ public class InexplicableSwitch {
                 for (int i = 0; i < 4; i++) {
 
                     for (int j = 0; j < 5; j++) {
-                        if (g[i][j] == 0) {
+                        if (g[i][j] == '0') {
                             step++;
                             turn(i + 1, j);
                         }
@@ -64,7 +64,7 @@ public class InexplicableSwitch {
                 }
                 boolean dark = false;
                 for (int i = 0; i < 5; i++) {
-                    if (g[4][i] == 0) {
+                    if (g[4][i] == '0') {
                         dark = true;
                         break;
                     }

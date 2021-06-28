@@ -1,7 +1,5 @@
 package leetcode5780删除一个元素使数组严格递增;
 
-import java.util.ArrayList;
-
 /**
  * @see
  */
@@ -10,41 +8,24 @@ public class canBeIncreasingClass {
 
     public boolean canBeIncreasing(int[] nums) {
         int n = nums.length;
-        int l = 0;
+        int count = 0;
 
-
-        ArrayList<Integer>list =new ArrayList<>();
-        for (int i:nums){
-            list.add(i);
-        }
-        if (n == 1) {
-            return true;
-        }else {
-
-            for(int i = 0; i <n; i++) {
-                if (list.get(i) > l) {
-                    l = list.get(i);
-                }else {
-
-                    break;
-                }
+        for (int i = 1; i < n && count <= 1; i++) {
+            if (nums[i] > nums[i - 1]) {
+                continue;
             }
-            l = 0;
-            for (int i:list){
-                if (i > l) {
-                    l = i;
-                }else {
-                    return false;
-                }
+            count++;
+            if (i - 1 > 0 && nums[i] <= nums[i - 2]) {
+                nums[i] = nums[i - 1];
             }
         }
 
-        return true;
+        return count <= 1;
 
     }
 
     public static void main(String[] args) {
-        int []arr = {105,924,32,968};
+        int[] arr = {105, 924, 32, 968};
         System.out.println(new canBeIncreasingClass().canBeIncreasing(arr));
     }
 }

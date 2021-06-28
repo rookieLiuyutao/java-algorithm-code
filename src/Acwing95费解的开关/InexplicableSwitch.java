@@ -46,14 +46,16 @@ public class InexplicableSwitch {
                     System.arraycopy(temp[i], 0, g[i], 0, 5);
                 }
                 int step = 0;
+                //第一行相当于一个5位二进制数，一共有32种状态
+                //只要第一行的状态确定，整个解法就确定，所以要枚举第一行的32种状态
                 for (int i = 0; i < 5; i++) {
                     if ((op >> i & 1) ==1) {
                         step++;
                         turn(0, i);
                     }
                 }
+                //根据第一行，递推后面的4行
                 for (int i = 0; i < 4; i++) {
-
                     for (int j = 0; j < 5; j++) {
                         if (g[i][j] == 0) {
                             step++;
@@ -74,6 +76,7 @@ public class InexplicableSwitch {
                 }
 
             }
+            //规定6步之内把灯变亮
             if (res > 6) {
                 res = -1;
             }

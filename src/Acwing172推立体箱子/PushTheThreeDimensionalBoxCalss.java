@@ -15,6 +15,8 @@ public class PushTheThreeDimensionalBoxCalss {
     static int n ,m ;
     static char [][] g = new char[N][N];
     //dist存从初始状态到每个State的距离
+    //dist的两个功能：1.有Boolean st[][][] 标记有没有被搜过的功能
+    //2.有记录最短距离的功能
     static int[][][] dist = new int[N][N][3];
 
     //d为状态偏移量 d[3][4][3]表示

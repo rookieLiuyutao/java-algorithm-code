@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class MaxIceCream {
 
     public int maxIceCream(int[] costs, int coins) {
-        int n = costs.length;
+
         Arrays.sort(costs);
         int count = 0;
         for (int cost : costs) {

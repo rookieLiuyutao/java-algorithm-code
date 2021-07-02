@@ -38,5 +38,4 @@ public class lengthOfLISClassIO {
         }
         System.out.println(res);
     }
-
 }

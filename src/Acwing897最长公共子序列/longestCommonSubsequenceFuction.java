@@ -1,7 +1,7 @@
 package Acwing897最长公共子序列;
 
 /**
- * @see 线性dp https://leetcode-cn.com/problems/longest-common-subsequence/
+ * @see 线性dp
  */
 public class longestCommonSubsequenceFuction {
     public int longestCommonSubsequence(String a, String b) {

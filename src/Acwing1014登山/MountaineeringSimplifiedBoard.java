@@ -6,7 +6,7 @@ import java.io.*;
  * @see 线性dp 最长上升子序列模型 维护一个先上升后下降的子序列
  * http://ybt.ssoier.cn:8088/problem_show.php?pid=1283
  */
-public class Mountaineer {
+public class MountaineeringSimplifiedBoard {
     static StreamTokenizer in = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
 
@@ -28,31 +28,26 @@ public class Mountaineer {
         dpl = new int[n];
         dpr = new int[n];
         h = new int[n];
+        int res = 1;
         for (int i = 0; i < n; i++) {
             h[i] = nextInt();
-        }
-
-        for (int i = 0; i < n; i++) {
             dpl[i] = 1;
+            dpr[i] = 1;
             for (int j = 0; j < i; j++) {
                 if (h[i] > h[j]) {
                     dpl[i] = Math.max(dpl[i], dpl[j] + 1);
                 }
-            }
-        }
-        for (int i = n - 1; i >= 0; i--) {
-            dpr[i] = 1;
-            for (int j = n - 1; j > i; j--) {
-                if (h[i] > h[j]) {
-                    dpr[i] = Math.max(dpr[i], dpr[j] + 1);
-
+                //如果max取了dpl[j] + 1，说明往上走的序列更长，队伍还在往上走；
+                //如果max取了dpr[j] + 1，说明往下走的序列更长，队伍还在往下走；
+                //同时扩展时，结果较大的一个就是最终结果
+                if (h[i] < h[j]) {
+                    dpr[i] = Math.max(dpr[i], Math.max(dpr[j] + 1, dpl[j] + 1));
                 }
             }
+            res = Math.max(res, Math.max(dpr[i], dpl[i]));
         }
-        int res = 1;
-        for (int i = 0; i < n; i++) {
-            res = Math.max(res, dpr[i] + dpl[i] - 1);
-        }
+
+
         out.println(res);
         out.flush();
     }

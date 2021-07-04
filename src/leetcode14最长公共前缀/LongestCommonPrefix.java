@@ -23,6 +23,27 @@ public class LongestCommonPrefix {
 
     }
 
+    public String longestCommonPrefix(String[] strs) {
+        int n = strs.length;
+        StringBuilder res = new StringBuilder();
+        if ( n == 0) {
+            return res.toString();
+        }
+
+        for(int i = 0;;i++){
+            if (i>strs[0].length()){
+                return res.toString();
+            }
+            char c = strs[0].charAt(i);
+            for (String ss:strs){
+                if (ss.length()<=i||ss.charAt(i)!=c){
+                    return res.toString();
+                }
+            }
+            res.append(c);
+        }
+    }
+
 }
 
 

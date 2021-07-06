@@ -8,7 +8,6 @@ import java.util.TreeMap;
  */
 public class CountOfAtoms {
     int u = 0;
-
     public Map<String, Integer> dfs(String formula) {
         Map<String, Integer> res = new TreeMap<>();
         while (u < formula.length()) {
@@ -18,7 +17,7 @@ public class CountOfAtoms {
                 //把答案填进去
                 temp = dfs(formula);
                 u++;
-                //记录元素最开始的系数
+                //处理括号后的角标
                 int coefficient = 1;
                 int k = u;
                 while (k < formula.length() && Character.isDigit(formula.charAt(k))) {
@@ -41,7 +40,7 @@ public class CountOfAtoms {
                 }
                 String element = formula.substring(u,k);
                  u =k;
-                //处理角标
+                //处理括号内的角标
                 int angleMark = 1;
                 while (k<formula.length()&&Character.isDigit(formula.charAt(k))) {
                     k++;
@@ -69,7 +68,7 @@ public class CountOfAtoms {
     }
 
     public static void main(String[] args) {
-        String str = "H2O";
+        String str = "Ba3(PO4)2";
         System.out.println(new CountOfAtoms().countOfAtoms(str));
     }
 }

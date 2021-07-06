@@ -25,10 +25,7 @@ public class arrangementClass {
                 dfs(u+1);
                 isUse[i] = false;
             }
-
-
         }
-
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

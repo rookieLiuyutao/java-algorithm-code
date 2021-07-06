@@ -1,4 +1,4 @@
-package leetcode1919删除链表的倒数第N个结点;
+package leetcode19删除链表的倒数第N个结点;
 
 /**
  * @see 链表 双指针

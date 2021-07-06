@@ -4,7 +4,7 @@ package leetcode24两两交换链表中的节点;
  * @see 链表 https://leetcode-cn.com/problems/swap-nodes-in-pairs/
  */
 public class swapPairsClass {
-    public static class ListNode {
+     static class ListNode {
       int val;
       ListNode next;
 

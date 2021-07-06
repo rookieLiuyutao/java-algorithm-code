@@ -18,9 +18,7 @@ public class powerOfTwoClass {
                 if (res.length()!=0) {
                     res.append("+");
                 }
-
                 String temp = "";
-
                 if (i==0){
                     res.append("2(0)");
                 }else if (i==1){
@@ -30,7 +28,6 @@ public class powerOfTwoClass {
                 }
                 res.append(temp);
             }
-
         }
         return res.toString();
     }
@@ -43,5 +40,4 @@ public class powerOfTwoClass {
         }
 
     }
-
 }

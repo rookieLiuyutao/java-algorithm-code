@@ -54,6 +54,8 @@ class test {
 //        }
 //        dfs(0, 0);
 //        System.out.println(res);
+        String s = "2CaOH2";
+        System.out.println(s.substring(1,4));
     }
 }
 

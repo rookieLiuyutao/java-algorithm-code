@@ -40,7 +40,7 @@ public class SisterCity {
           dp[i] = 1;
           for(int j = 0; j <i; j++) {
             if (city[i][1]>city[j][1]){
-                dp[i] = Math.max(dp[i],dp[j]+1 );
+                dp[i] = Math.max(dp[i],dp[j]+1);
             }
           }
           res = Math.max(res,dp[i]);

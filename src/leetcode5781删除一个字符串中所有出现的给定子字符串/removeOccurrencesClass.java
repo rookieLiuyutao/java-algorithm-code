@@ -19,7 +19,9 @@ public class removeOccurrencesClass {
         // 构造过程 i = 2，j = 0 开始，i 小于等于匹配串长度 【构造 i 从 2 开始】
         for (int i = 2, j = 0; i <= m; i++) {
             // 匹配不成功的话，j = next(j)
-            while (j > 0 && p[i] != p[j + 1]) j = next[j];
+            while (j > 0 && p[i] != p[j + 1]) {
+                j = next[j];
+            }
             // 匹配成功的话，先让 j++
             if (p[i] == p[j + 1]) j++;
             // 更新 next[i]，结束本次循环，i++
@@ -63,8 +65,7 @@ public class removeOccurrencesClass {
     }
 
     public static void main(String[] args) {
-        String s = "eemckxmckx"
-        ;
+        String s = "eemckxmckx";
         System.out.println(new removeOccurrencesClass().removeOccurrences(s,"emckx"));
     }
 

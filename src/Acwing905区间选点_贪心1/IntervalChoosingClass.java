@@ -5,7 +5,6 @@ package Acwing905区间选点_贪心1;
 
 import java.util.*;
 
-
 public class IntervalChoosingClass {
 
     public static int intervalChoosing(int[][] arr, int N) {

@@ -28,7 +28,13 @@ public class slidingWindowClass2 {
           arr[i] = nextInt();
 
         }
+        //用i来判断元素是否装满窗口，和做窗口内的指针
+        //用j来做窗口所滑动的数组的指针
         for (int j = 0,i = 1-windowsLen;j<n;i++,j++){
+            //i>0,窗口已经完全进来
+            //求最大值时，窗口内的元素单调递减
+            //deque.getFirst()==arr[i-1]判断窗口内元素个数是否溢出
+            // 弹出队头
             if (i>0&&deque.getFirst()==arr[i-1]){
                 deque.removeFirst();
             }
@@ -42,7 +48,6 @@ public class slidingWindowClass2 {
         }
         deque.clear();
         out.println();
-
         for (int j = 0,i = 1-windowsLen;j<n;i++,j++){
             if (i>0&&deque.getFirst()==arr[i-1]){
                 deque.removeFirst();

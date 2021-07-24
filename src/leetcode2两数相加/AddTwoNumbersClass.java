@@ -4,6 +4,7 @@ package leetcode2两数相加;
  * @see 模拟 https://leetcode-cn.com/problems/add-two-numbers/
  */
 public class AddTwoNumbersClass {
+
     public static class ListNode {
         int val;
         ListNode next;

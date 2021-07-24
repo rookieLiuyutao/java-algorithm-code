@@ -1,6 +1,6 @@
 package ACwing3完全背包问题;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class completeBagDoubleOptimizationPlusClass {
 
@@ -13,8 +13,9 @@ public class completeBagDoubleOptimizationPlusClass {
         //一定要注意，输入输出版的背包问题，2个数组都是从第二个数开始填入的
         for(int i = 1; i <= n; i++) {
             int volume = sc.nextInt(),worth = sc.nextInt();
-            for (int j = volume; j <=bagVolume ; j++)
+            for (int j = volume; j <=bagVolume ; j++) {
                 dp[j] = Math.max(dp[j], dp[j-volume]+worth);
+            }
         }
         System.out.println(dp[bagVolume]);
     }

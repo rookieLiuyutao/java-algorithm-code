@@ -51,7 +51,6 @@ public class ManyBag {
 //        f[2], f[v+2], f[2*v+2], f[3*v+2], …… , f[k*v+2]...
 //        f[r], f[v+r], f[2*v+r], f[3*v+r], …… , f[k*v+r]
 //        其中0<r<v,如果有f[x]中,x>m的,会在代码中被筛除,其中m=k*v+x;(0<x<=r);
-
         for (int i = 0; i < n; i++) {
             //拷贝数组
             arr = Arrays.copyOf(dp,bagVolume+1);

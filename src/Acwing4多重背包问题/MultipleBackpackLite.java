@@ -14,7 +14,7 @@ public class MultipleBackpackLite {
         while (n-- > 0) {
             v = sc.nextInt();w = sc.nextInt();s = sc.nextInt();
             for(int i = 1; i <=s; i++) {
-                for(int j = t; j >=w; j--) {
+                for(int j = t; j >=v; j--) {
                     dp[j] = Math.max(dp[j],dp[j-v]+w);
                 }
             }

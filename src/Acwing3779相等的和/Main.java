@@ -27,7 +27,6 @@ public class Main {
             this.y = y;
         }
     }
-
     public static void main(String[] args) throws Exception {
         int k = nextInt();
         HashMap<Integer, Point> map = new HashMap<>();

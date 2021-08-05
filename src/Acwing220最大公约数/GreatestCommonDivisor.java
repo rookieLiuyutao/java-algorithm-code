@@ -1,13 +1,12 @@
-package Acwing873欧拉函数;
-/**
- * https://www.acwing.com/problem/content/875/
- * 质数
- */
+package Acwing220最大公约数;
 
 import java.io.*;
 import java.util.Scanner;
 
-public class EulerFunction {
+/**
+ * https://www.acwing.com/problem/content/874/
+ */
+public class GreatestCommonDivisor {
 
     static StreamTokenizer in = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
@@ -19,24 +18,16 @@ public class EulerFunction {
         in.nextToken();
         return in.sval;
     }
+    static Scanner sc = new Scanner(System.in);
+    static int gcd(int a,int b){
+        return b==0?a:gcd(b,a%b);
+    }
+
     public static void main(String[] args)throws Exception {
         int n = nextInt();
         while (n-- > 0) {
-            int a = nextInt();
-            int res = a;
-            for (int i = 2; i <= a / i; i++) {
-                if (a % i == 0) {
-                    //先写除再写乘不会报int
-                    res = res/i*(i-1);
-                    while (a%i==0) {
-                        a/=i;
-                    }
-                }
-            }
-            if (a>1){
-                res = res/a*(a-1);
-            }
-            out.println(res);
+            int a = nextInt(),b =nextInt();
+            out.println(gcd(a,b));
         }
         out.flush();
     }

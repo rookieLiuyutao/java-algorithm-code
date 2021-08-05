@@ -4,7 +4,6 @@ package Acwing868筛质数_线性筛法;
  * 质数
  */
 import java.util.Scanner;
-
 public class SievePrimeNumber {
     
     static Scanner sc = new Scanner(System.in);

@@ -45,5 +45,4 @@ public class LinearCongruenceEquation {
         }
         out.flush();
     }
-
 }

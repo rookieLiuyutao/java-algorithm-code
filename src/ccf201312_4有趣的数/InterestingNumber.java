@@ -1,4 +1,4 @@
-package ccf2013124有趣的数;
+package ccf201312_4有趣的数;
 
 import java.util.Scanner;
 

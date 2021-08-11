@@ -1,4 +1,7 @@
 package Acwing885求组合数I;
+/**
+ * https://www.acwing.com/problem/content/887/
+ */
 
 import java.io.*;
 import java.util.Scanner;

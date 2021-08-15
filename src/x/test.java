@@ -10,7 +10,9 @@ import java.util.PriorityQueue;
 
 class test {
     public static void main(String[] args) {
-        System.out.println(Math.floor(5/2));
+        char c = 'a';
+        System.out.println((char) (c-32));
+        System.out.println('A'-'a');
     }
 }
 

@@ -36,13 +36,13 @@ public class PrintEdgeTozhi {
             bcols = brow == endR ? bcols + 1 : bcols;
             brow = brow == endR ? brow : brow + 1;
             isTurn = !isTurn;
-            System.out.print("A点"+ arow+" ");
-            System.out.print(acols+" ");
-            System.out.println();
-            System.out.print("B点" +brow+" ");
-            System.out.print(bcols+" ");
-            System.out.println();
-            System.out.println("================");
+//            System.out.print("A点"+ arow+" ");
+//            System.out.print(acols+" ");
+//            System.out.println();
+//            System.out.print("B点" +brow+" ");
+//            System.out.print(bcols+" ");
+//            System.out.println();
+//            System.out.println("================");
         }
         System.out.println();
         return arrayList;
@@ -55,12 +55,12 @@ public class PrintEdgeTozhi {
                 System.out.println("打印A");
                 int a=matrix[arow++][acols--];
                 System.out.print(a + " ");
-                arrayList.add(a);
-                System.out.println();
-                System.out.println("=============");
-                System.out.print("A移动到" +arow+" ");
-                System.out.print(acols+" ");
-                System.out.println();
+//                arrayList.add(a);
+//                System.out.println();
+//                System.out.println("=============");
+//                System.out.print("A移动到" +arow+" ");
+//                System.out.print(acols+" ");
+//                System.out.println();
 
             }
         } else {
@@ -69,12 +69,12 @@ public class PrintEdgeTozhi {
                 System.out.println("打印B");
                 int b =matrix[brow--][bcols++];
                 System.out.print( b+ " ");
-                arrayList.add(b);
-                System.out.println();
-                System.out.println("=============");
-                System.out.print("B移动到" +brow+" ");
-                System.out.print(bcols+ " ");
-                System.out.println();
+//                arrayList.add(b);
+//                System.out.println();
+//                System.out.println("=============");
+//                System.out.print("B移动到" +brow+" ");
+//                System.out.print(bcols+ " ");
+//                System.out.println();
 
             }
         }
@@ -82,7 +82,7 @@ public class PrintEdgeTozhi {
 
 
     public static void main(String[] args) {
-        int[][] matrix = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 } };
+        int[][] matrix = { { 1, 5,3,9 }, { 3,7,5,6 }, { 9,4,6,4 },{7,3,1,3} };
         System.out.println("原矩阵以之字型输出后为"+ printMatrixZigZag(matrix));
 
 

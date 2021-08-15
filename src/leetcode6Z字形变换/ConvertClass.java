@@ -1,7 +1,7 @@
 package leetcode6Z字形变换;
 
 /**
- * @see https://leetcode-cn.com/problems/zigzag-conversion/
+ * https://leetcode-cn.com/problems/zigzag-conversion/
  */
 public class ConvertClass {
     public String convert(String s, int numRows) {

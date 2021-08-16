@@ -4,7 +4,8 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 /**
- * @see 模拟题 https://www.acwing.com/problem/content/3492/
+ *  https://www.acwing.com/problem/content/3492/
+ *  日期模拟
  */
 public class dayOfTheWeekClass {
 

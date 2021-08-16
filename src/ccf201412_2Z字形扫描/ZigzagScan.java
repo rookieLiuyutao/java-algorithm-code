@@ -1,7 +1,6 @@
 package ccf201412_2Z字形扫描;
 
 import java.io.*;
-import java.util.Scanner;
 
 public class ZigzagScan {
 

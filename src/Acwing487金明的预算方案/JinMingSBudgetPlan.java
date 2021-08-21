@@ -53,8 +53,8 @@ public class JinMingSBudgetPlan {
                             w += s[i].get(u).y;
                         }
                     }
-                    if (j>=v){
-                        dp[j]  = Math.max(dp[j],dp[j-v]+w);
+                    if (j >= v) {
+                        dp[j] = Math.max(dp[j], dp[j - v] + w);
                     }
                 }
             }

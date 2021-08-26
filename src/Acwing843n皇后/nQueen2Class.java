@@ -13,7 +13,6 @@ public class nQueen2Class {
 
     /**
      * 按行搜索：每行只能放一个皇后，所以我们枚举一行的各种情况下的放法
-     *
      * @param u
      */
     static void dfs( int x, int y,int num) {

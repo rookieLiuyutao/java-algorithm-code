@@ -18,11 +18,9 @@ public class MaxIceCream {
             }
         }
         return count;
-
     }
 
     public static void main(String[] args) {
-
         int []arr = {1,3,2,4,1};
         System.out.println(new MaxIceCream().maxIceCream(arr,7));
     }

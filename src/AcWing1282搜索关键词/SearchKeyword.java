@@ -66,12 +66,7 @@ public class SearchKeyword {
         int res = 0;
         for (int i = 0, j = 0; i < text.length(); i++) {
             int t = text.charAt(i) - 'a';
-            while (j != 0 && tire[j][t] == 0) {
-                j = ne[j];
-            }
-            if (tire[j][t] != 0) {
-                j = tire[j][t];
-            }
+            j = tire[j][t];
             int p = j;
             while (p != 0) {
                 res+=cnt[p];

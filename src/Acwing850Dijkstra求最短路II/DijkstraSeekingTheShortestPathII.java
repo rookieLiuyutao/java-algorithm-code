@@ -19,6 +19,7 @@ public class DijkstraSeekingTheShortestPathII {
         return (int) in.nval;
     }
 
+
     static String next() throws Exception {
         in.nextToken();
         return in.sval;

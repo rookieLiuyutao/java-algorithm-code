@@ -13,7 +13,6 @@ public class DijkstraSeekingTheShortestPathII2 {
 
     static class Point{
         int index,value;
-
         public Point(int index, int value) {
             this.index = index;
             this.value = value;

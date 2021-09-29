@@ -24,6 +24,9 @@ public class TreeOutsideTheSchoolGate {
                 q[j].add(i);
             }
         }
+        for(int i = 1; i <=10; i++) {
+            System.out.println(q[i]);
+        }
         int n = sc.nextInt();
         int[] a = new int[n+1];
         long[] dp = new long[n + 1];

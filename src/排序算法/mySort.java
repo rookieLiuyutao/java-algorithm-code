@@ -28,7 +28,6 @@ public class mySort {
         }
         System.out.println(Arrays.toString(arr));
 
-
     }
 
     public static void insertSort(int[] arr) {

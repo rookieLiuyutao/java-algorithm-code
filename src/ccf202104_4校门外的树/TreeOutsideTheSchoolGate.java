@@ -2,6 +2,7 @@ package ccf202104_4校门外的树;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -14,7 +15,6 @@ public class TreeOutsideTheSchoolGate {
     static ArrayList<Integer>[] q = new ArrayList[N];
 
     static boolean[] st = new boolean[N];
-
     public static void main(String[] args) {
         for (int i = 0; i < N; i++) {
             q[i] = new ArrayList<>();

@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /**
  * @see 有向图欧拉路径 http://ybt.ssoier.cn:8088/problem_show.php?pid=1374
+ * https://www.acwing.com/solution/content/4877/
  */
 public class SnowShovelClass {
 

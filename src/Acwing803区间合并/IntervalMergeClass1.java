@@ -1,6 +1,7 @@
 package Acwing803区间合并;
 
 import java.io.*;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Comparator;
 
@@ -51,6 +52,7 @@ public class IntervalMergeClass1 {
             }
         }
         out.println(res);
+        
         out.flush();
     }
 }

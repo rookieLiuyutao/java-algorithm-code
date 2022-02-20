@@ -1,4 +1,7 @@
 package leetcode1310子数组异或查询;
+/**
+ * https://leetcode-cn.com/problems/xor-queries-of-a-subarray/
+ */
 
 import java.util.Arrays;
 

@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.Arrays;
 
 public class KittenClimbing {
+
     static StreamTokenizer in = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     static int nextInt() throws Exception{

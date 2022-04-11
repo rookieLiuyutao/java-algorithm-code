@@ -31,7 +31,7 @@ public class SpfaJudgesNegativeRing {
         while (!q.isEmpty()) {
             int t = q.poll();
             for (int i = h[t]; i != -1; i = ne[i]) {
-                int j = ne[i];
+                int j = e[i];
                 if (dis[j] > dis[t] + w[i]) {
                     dis[j] = dis[t] + w[i];
                     cnt[j] = cnt[i] + 1;

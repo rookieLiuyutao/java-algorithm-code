@@ -15,7 +15,7 @@ public class trapClass {
 
         int right[]= new int[n];
         left[0] =height[0];
-        right[n-1]  =height[n-1];
+        right[n-1]  = height[n-1];
         for (int i = 1; i < n; i++) {
             left[i]=Math.max(left[i-1],height[i]);
 

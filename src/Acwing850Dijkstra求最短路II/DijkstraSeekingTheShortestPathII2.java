@@ -1,10 +1,7 @@
 package Acwing850Dijkstra求最短路II;
 
 import java.io.*;
-import java.util.AbstractMap;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.PriorityQueue;
+import java.util.*;
 
 /**
  * https://www.acwing.com/problem/content/852/
@@ -76,6 +73,7 @@ public class DijkstraSeekingTheShortestPathII2 {
             add(a, b, c);
         }
         System.out.println(dijkstra());
+        System.out.println(Arrays.toString(h));
 
     }
 }
